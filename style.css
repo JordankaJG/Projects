@@ -88,6 +88,9 @@ input[type="checkbox"]:checked ~ .icon i {
 /* ---Media query--- */
 
 @media (max-width: 768px) {
+  body {
+    margin-top: 88.4px;
+  }
   .nav-link {
     color: white !important;
   }
@@ -97,12 +100,28 @@ input[type="checkbox"]:checked ~ .icon i {
   .offcanvas-body ul li a:focus {
     background-color: #54535375 !important;
     width: auto;
-
     padding: 0.6rem;
     border-radius: 3px !important;
   }
+  .list {
+    font-size: 1rem !important;
+  }
+  .icon-size {
+    font-size: 1.5rem !important ;
+  }
+  .border-end {
+    border-right: none !important;
+    border-bottom: 1px solid #a4a3a3 !important;
+  }
 }
 @media (max-width: 425px) {
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .logo-text {
+    font-size: 0.5rem;
+  }
   .heading-size {
     font-size: 1.5rem;
   }
