@@ -85,6 +85,32 @@ input[type="checkbox"]:checked ~ .icon i {
   display: inline !important;
 }
 
+/* Cards */
+
+.header h1{
+  font-size: 3.5rem !important;
+}
+.project-m{
+  background-color: #fcd232;
+  padding: 0.4rem 1rem;
+  
+}
+.project-p{
+    background-color: #82b0f6;
+  padding: 0.4rem 1rem;
+}
+.project-d{
+    background-color: #f576e0;
+  padding: 0.4rem 1rem;
+}
+.b-shadow{
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.191), -5px -5px 10px  rgba(0, 0, 0, 0.238)  !important;
+}
+.card:hover{
+  transform: scale(1.05)  !important;
+  z-index: 3;
+  transition:0.4s;
+}
 /* ---Media query--- */
 
 @media (max-width: 768px) {
