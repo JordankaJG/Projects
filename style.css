@@ -156,4 +156,7 @@ input[type="checkbox"]:checked ~ .icon i {
   .heading-size {
     font-size: 1.2rem;
   }
+  .footer h6{
+    font-size: 0.8rem !important;
+  }
 }
