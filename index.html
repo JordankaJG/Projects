@@ -176,7 +176,7 @@
       </div>
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <div class="row">
+          <div class="row cards-order">
             <!-- Marketing cards -->
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 card-marketing">
               <div class="card border-0 b-shadow">
@@ -801,6 +801,9 @@
               </div>
             </div>
           </div>
+          <button class="btn btn-dark  d-md-none d-block mx-auto load-more my-2">
+            Прикажи повеќе
+          </button>
         </div>
       </div>
     </div>
@@ -826,8 +829,8 @@
             codingCard.style.display = "inline-block";
           });
 
-          document.querySelector("#filter-design").checked =  false ;
-                   document.querySelector("#filter-marketing").checked = false;
+          document.querySelector("#filter-design").checked = false;
+          document.querySelector("#filter-marketing").checked = false;
         } else {
           showAllCards();
         }
@@ -841,8 +844,8 @@
 
           marketingCards.forEach((marketingCard) => {
             marketingCard.style.display = "inline-block";
-               document.querySelector("#filter-design").checked =  false ;
-                   document.querySelector("#filter-coding").checked = false;
+            document.querySelector("#filter-design").checked = false;
+            document.querySelector("#filter-coding").checked = false;
           });
         } else {
           showAllCards();
@@ -858,8 +861,8 @@
           designCards.forEach((designCard) => {
             designCard.style.display = "inline-block";
 
-               document.querySelector("#filter-coding").checked =  false ;
-                   document.querySelector("#filter-marketing").checked = false;
+            document.querySelector("#filter-coding").checked = false;
+            document.querySelector("#filter-marketing").checked = false;
           });
         } else {
           showAllCards();
@@ -881,7 +884,9 @@
         });
       }
     </script>
+
     <!-- POPPER JS -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
