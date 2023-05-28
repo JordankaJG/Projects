@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- LOCAL MAIN CSS-->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- BOOTSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- Nav bar -->
+
+    <nav
+      class="navbar navbar-expand-lg bg-light bg-orange fixed-top py-lg-4 navbar-shadow"
+    >
+      <div class="container-fluid mx-2 mx-lg-5 mx-md-3">
+        <a class="navbar-brand me-0 text-center p-2" href="index.html">
+          <img
+            src="./images/Logo.png"
+            class="img-fluid logo mb-md-2 mb-1"
+            alt=""
+          />
+          <p class="text-uppercase logo-text fw-bolder mb-0">Brainster</p></a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <div class="hamburger d-block">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2 ms-auto"></span>
+            <span class="bar bar-3 ms-auto"></span>
+          </div>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark w-100"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close btn-close-white ms-auto"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav mx-auto mb-2 mb-lg-0 mt-5 mt-lg-0 fw-bold align-items-lg-center"
+            >
+              <li class="nav-item me-xl-3 mb-3 m-lg-0">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="https://brainster.co/marketing/"
+                  target="_blank"
+                  >Академија за маркетинг</a
+                >
+              </li>
+              <li class="nav-item me-3 mb-3 mb-lg-0">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="https://brainster.co/front-end/"
+                  target="_blank"
+                  >Академија за програмирање</a
+                >
+              </li>
+
+              <li class="nav-item me-3 mb-3 mb-lg-0">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="https://brainster.co/data-science/"
+                  target="_blank"
+                  >Академија за data sicence</a
+                >
+              </li>
+
+              <li class="nav-item mb-4 mb-lg-0">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="https://brainster.co/graphic-design/"
+                  target="_blank"
+                  >Академија за дизајн</a
+                >
+              </li>
+            </ul>
+
+            <button class="btn btn-danger btn-size py-3 fw-bold" type="submit">
+              <a class="text-decoration-none text-white" href="/form.html">
+                Вработи наш студент</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Form -->
+    <div class="container-fluid h-100">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <div class="heading-form">
+            <h1 class="fw-bold heading-form-size text-center">
+              Вработи студенти
+            </h1>
+          </div>
+          <div class="row pb-5" id="myForm">
+            <div class="col-md-6 mb-md-4">
+              <label for="name" class="fw-bold mb-2">Име и презиме</label>
+              <input
+                type="text"
+                class="form-control py-3 border-0"
+                placeholder="Вашето име и презиме"
+                name="name"
+                id="username"
+              />
+            </div>
+            <div class="col-md-6 mb-md-4">
+              <label for="name" class="fw-bold mb-2">Име на копанија</label>
+              <input
+                type="text"
+                class="form-control py-3 border-0"
+                placeholder="Име на вашата компанија"
+                id="companyName"
+              />
+            </div>
+            <div class="col-md-6 mb-md-4">
+              <label for="name" class="fw-bold mb-2">Контакт имејл</label>
+              <input
+                type="email"
+                class="form-control py-3 border-0"
+                placeholder="Контакт имејл на вашата компанија"
+                id="email"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="name" class="fw-bold mb-2">Контакт телефон</label>
+              <input
+                type="tel"
+                class="form-control py-3 mb-3 border-0"
+                placeholder="Контакт телефон на вашата компанија"
+                id="number"
+              />
+              <div class="error"></div>
+            </div>
+            <div class="col-md-6 mt-md-4 mt-3 input-control">
+              <div class="dropdown mb-3">
+                <button
+                  class="btn btn-secondary w-100 bg-white btn-outline-light btn-no-hover text-black fw-bold d-flex justify-content-between py-3"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="myButton"
+                >
+                  Изберете тип на студент
+                  <i class="bi bi-chevron-down"></i>
+                </button>
+                <div class="error"></div>
+                <ul class="dropdown-menu w-100 mt-3 border-0">
+                  <li>
+                    <a class="dropdown-item fw-bold" href="#"
+                      >Студенти од маркетинг</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item fw-bold" href="#"
+                      >Студенти од програмирање</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item fw-bold" href="#"
+                      >Студенти од data-science</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item fw-bold" href="#"
+                      >Студенти од дизајн</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4 mt-4">
+              <button
+                class="btn btn-danger bg-red w-100 py-3 btn-margin-mobile"
+                id="buttonBelow"
+                type="submit"
+              >
+                ИСПРАТИ
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid footer">
+      <div class="row justify-content-center text-bg-dark py-3">
+        <div class="col-md-6 text-center">
+          <h6 class="fw-bold mb-0">
+            Изработено со ❤️ од студентите на Brainster
+          </h6>
+        </div>
+      </div>
+    </div>
+    <!-- toggle margin top button -->
+    <script>
+      function handleClick() {
+        const buttonBelow = document.getElementById("buttonBelow");
+
+        if (window.innerWidth <= 425) {
+          if (
+            buttonBelow.style.marginTop === "180px" &&
+            buttonBelow.style.marginBottom === ""
+          ) {
+            buttonBelow.style.marginTop = "";
+            buttonBelow.style.marginBottom = "";
+          } else {
+            buttonBelow.style.marginTop = "180px";
+            buttonBelow.style.marginBottom = "";
+          }
+        }
+      }
+
+      const button1 = document.getElementById("myButton");
+      button1.addEventListener("click", handleClick);
+
+      // Dropdown menu selecting items
+      const dropdownItems = document.querySelectorAll(".dropdown-item");
+
+      dropdownItems.forEach((item) => {
+        item.addEventListener("click", (event) => {
+          event.preventDefault();
+          buttonBelow.style.marginTop = "";
+          const selectedText = item.textContent.trim();
+          const dropdownButton = document.querySelector("#myButton");
+          dropdownButton.innerHTML = `${selectedText} <i class="bi bi-chevron-down"></i>`;
+        });
+      });
+    </script>
+
+    <!-- POPPER JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
