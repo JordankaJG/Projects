@@ -24,6 +24,7 @@
     />
   </head>
   <body>
+    <
     <!-- Nav bar -->
 
     <nav
@@ -128,95 +129,126 @@
               Вработи студенти
             </h1>
           </div>
-          <div class="row pb-5" id="myForm">
-            <div class="col-md-6 mb-md-4">
-              <label for="name" class="fw-bold mb-2">Име и презиме</label>
-              <input
-                type="text"
-                class="form-control py-3 border-0"
-                placeholder="Вашето име и презиме"
-                name="name"
-                id="username"
-              />
-            </div>
-            <div class="col-md-6 mb-md-4">
-              <label for="name" class="fw-bold mb-2">Име на копанија</label>
-              <input
-                type="text"
-                class="form-control py-3 border-0"
-                placeholder="Име на вашата компанија"
-                id="companyName"
-              />
-            </div>
-            <div class="col-md-6 mb-md-4">
-              <label for="name" class="fw-bold mb-2">Контакт имејл</label>
-              <input
-                type="email"
-                class="form-control py-3 border-0"
-                placeholder="Контакт имејл на вашата компанија"
-                id="email"
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="name" class="fw-bold mb-2">Контакт телефон</label>
-              <input
-                type="tel"
-                class="form-control py-3 mb-3 border-0"
-                placeholder="Контакт телефон на вашата компанија"
-                id="number"
-              />
-              <div class="error"></div>
-            </div>
-            <div class="col-md-6 mt-md-4 mt-3 input-control">
-              <div class="dropdown mb-3">
-                <button
-                  class="btn btn-secondary w-100 bg-white btn-outline-light btn-no-hover text-black fw-bold d-flex justify-content-between py-3"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  id="myButton"
+          <form id="myForm">
+            <div class="row pb-5">
+              <div class="col-md-6 mb-md-4">
+                <label for="nameInput" class="fw-bold mb-2"
+                  >Име и презиме</label
                 >
-                  Изберете тип на студент
-                  <i class="bi bi-chevron-down"></i>
+                <input
+                  type="text"
+                  class="form-control py-3 border-0"
+                  placeholder="Вашето име и презиме"
+                  name="nameInput"
+                  id="nameInput"
+                />
+                <div
+                  id="nameInputError"
+                  class="error-message fw-bold text-danger mt-2"
+                ></div>
+              </div>
+              <div class="col-md-6 mb-md-4">
+                <label for="companyName" class="fw-bold mb-2"
+                  >Име на копанија</label
+                >
+                <input
+                  type="text"
+                  class="form-control py-3 border-0"
+                  placeholder="Име на вашата компанија"
+                  id="companyName"
+                />
+                <div
+                  id="companyNameInputError"
+                  class="error-message fw-bold text-danger mt-2"
+                ></div>
+              </div>
+              <div class="col-md-6 mb-md-4">
+                <label for="emailInput" class="fw-bold mb-2"
+                  >Контакт имејл</label
+                >
+                <input
+                  type="email"
+                  class="form-control py-3 border-0"
+                  placeholder="Контакт имејл на вашата компанија"
+                  id="emailInput"
+                />
+                <div
+                  id="emailInputError"
+                  class="error-message fw-bold text-danger mt-2"
+                ></div>
+              </div>
+              <div class="col-md-6">
+                <label for="nuberInput" class="fw-bold mb-2"
+                  >Контакт телефон</label
+                >
+                <input
+                  type="tel"
+                  class="form-control py-3 mb-3 border-0"
+                  placeholder="Контакт телефон на вашата компанија"
+                  id="numberInput"
+                />
+                <div
+                  id="numberInputError"
+                  class="error-message fw-bold text-danger mt-2"
+                ></div>
+              </div>
+              <div class="col-md-6 mt-md-4 mt-3 input-control">
+                <div class="dropdown mb-3">
+                  <button
+                    class="btn btn-secondary w-100 bg-white btn-outline-light btn-no-hover text-black fw-bold d-flex justify-content-between py-3 dropdownInput"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    id="myButton"
+                  >
+                    Изберете тип на студент
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                   
+                
+                  <ul class="dropdown-menu w-100 mt-3 border-0">
+                    <li>
+                      <a class="dropdown-item fw-bold" href="#"
+                        >Студенти од маркетинг</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item fw-bold" href="#"
+                        >Студенти од програмирање</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item fw-bold" href="#"
+                        >Студенти од data-science</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item fw-bold" href="#"
+                        >Студенти од дизајн</a
+                      >
+                    </li>
+                  </ul>
+                    <div
+                  id="dropdownInputError"
+                  class="error-message fw-bold text-danger mt-2"
+                ></div>
+                 
+                </div>
+              </div>
+              <div class="col-md-6 mb-4 mt-4">
+                <button
+                  class="btn btn-danger bg-red w-100 py-3 btn-margin-mobile"
+                  id="buttonBelow"
+                  type="submit"
+                >
+                  ИСПРАТИ
                 </button>
-                <div class="error"></div>
-                <ul class="dropdown-menu w-100 mt-3 border-0">
-                  <li>
-                    <a class="dropdown-item fw-bold" href="#"
-                      >Студенти од маркетинг</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item fw-bold" href="#"
-                      >Студенти од програмирање</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item fw-bold" href="#"
-                      >Студенти од data-science</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item fw-bold" href="#"
-                      >Студенти од дизајн</a
-                    >
-                  </li>
-                </ul>
               </div>
             </div>
-            <div class="col-md-6 mb-4 mt-4">
-              <button
-                class="btn btn-danger bg-red w-100 py-3 btn-margin-mobile"
-                id="buttonBelow"
-                type="submit"
-              >
-                ИСПРАТИ
-              </button>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -247,7 +279,9 @@
             buttonBelow.style.marginBottom = "";
           }
         }
-      }
+        
+        
+}
 
       const button1 = document.getElementById("myButton");
       button1.addEventListener("click", handleClick);
@@ -264,6 +298,69 @@
           dropdownButton.innerHTML = `${selectedText} <i class="bi bi-chevron-down"></i>`;
         });
       });
+
+      // ------Form Validation------
+
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var nameInput = document.getElementById("nameInput");
+          var nameInputError = document.getElementById("nameInputError");
+          if (nameInput.value.trim() === "") {
+            nameInputError.textContent = "Name field is required.";
+            nameInput.classList.add("is-invalid");
+          } else {
+            nameInputError.textContent = "";
+            nameInput.classList.remove("is-invalid");
+            nameInput.classList.add("is-valid");
+          }
+          // company name
+          var companyNameInput = document.getElementById("companyName");
+          var companyNameInputError = document.getElementById(
+            "companyNameInputError"
+          );
+          if (companyName.value.trim() === "") {
+            companyNameInputError.textContent = "Age field is required.";
+            companyName.classList.add("is-invalid");
+          } else {
+            companyNameInputError.textContent = "";
+            companyName.classList.remove("is-invalid");
+            companyName.classList.add("is-valid");
+          }
+          // Validate email input
+          var emailInput = document.getElementById("emailInput");
+          var emailInputError = document.getElementById("emailInputError");
+
+          if (emailInput.value.trim() === "") {
+            emailInputError.textContent = "Email field is required.";
+            emailInput.classList.add("is-invalid");
+          } else {
+            emailInputError.textContent = "";
+            emailInput.classList.remove("is-invalid");
+            emailInput.classList.add("is-valid");
+          }
+
+          // Number input validation
+          var numberInput = document.getElementById("numberInput");
+          var numberInputError = document.getElementById("numberInputError");
+          if (numberInput.value.trim() === "") {
+            numberInputError.textContent = "Age field is required";
+            numberInput.classList.add("is-invalid");
+          } else {
+            numberInputError.textContent = "";
+            numberInput.classList.remove("is-invalid");
+            numberInput.classList.add("is-valid");
+          }
+
+
+
+        
+ 
+});
+
+
     </script>
 
     <!-- POPPER JS -->
