@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
     <!-- LOCAL MAIN CSS-->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <!-- BOOTSTRAP ICONS -->
     <link
       rel="stylesheet"
@@ -24,16 +24,15 @@
     />
   </head>
   <body>
-    <
     <!-- Nav bar -->
 
     <nav
       class="navbar navbar-expand-lg bg-light bg-orange fixed-top py-lg-4 navbar-shadow"
     >
       <div class="container-fluid mx-2 mx-lg-5 mx-md-3">
-        <a class="navbar-brand me-0 text-center p-2" href="index.html">
+        <a class="navbar-brand me-0 text-center p-2" href="/page_1/index.html">
           <img
-            src="./images/Logo.png"
+            src="../images/Logo.png"
             class="img-fluid logo mb-md-2 mb-1"
             alt=""
           />
@@ -121,7 +120,7 @@
       </div>
     </nav>
     <!-- Form -->
-    <div class="container-fluid h-100">
+    <div class="container-fluid min-vh-100">
       <div class="row justify-content-center">
         <div class="col-lg-7">
           <div class="heading-form">
@@ -142,10 +141,10 @@
                   name="nameInput"
                   id="nameInput"
                 />
-                <div
+                <small
                   id="nameInputError"
                   class="error-message fw-bold text-danger mt-2"
-                ></div>
+                ></small>
               </div>
               <div class="col-md-6 mb-md-4">
                 <label for="companyName" class="fw-bold mb-2"
@@ -157,10 +156,10 @@
                   placeholder="Име на вашата компанија"
                   id="companyName"
                 />
-                <div
+                <small
                   id="companyNameInputError"
                   class="error-message fw-bold text-danger mt-2"
-                ></div>
+                ></small>
               </div>
               <div class="col-md-6 mb-md-4">
                 <label for="emailInput" class="fw-bold mb-2"
@@ -172,10 +171,10 @@
                   placeholder="Контакт имејл на вашата компанија"
                   id="emailInput"
                 />
-                <div
+                <small
                   id="emailInputError"
                   class="error-message fw-bold text-danger mt-2"
-                ></div>
+                ></small>
               </div>
               <div class="col-md-6">
                 <label for="nuberInput" class="fw-bold mb-2"
@@ -183,29 +182,29 @@
                 >
                 <input
                   type="tel"
-                  class="form-control py-3 mb-3 border-0"
+                  class="form-control py-3 mb-2 border-0"
                   placeholder="Контакт телефон на вашата компанија"
                   id="numberInput"
                 />
-                <div
+                <small
                   id="numberInputError"
-                  class="error-message fw-bold text-danger mt-2"
-                ></div>
+                  class="error-message fw-bold text-danger"
+                ></small>
               </div>
-              <div class="col-md-6 mt-md-4 mt-3 input-control">
+              <div class="col-md-6 mt-md-4 mt-3">
                 <div class="dropdown mb-3">
                   <button
                     class="btn btn-secondary w-100 bg-white btn-outline-light btn-no-hover text-black fw-bold d-flex justify-content-between py-3 dropdownInput"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    id="myButton"
+                    id="dropdownInput"
                   >
                     Изберете тип на студент
-                    <i class="bi bi-chevron-down"></i>
+
+                    <i class="bi bi-chevron-down" id="chevron-down"></i>
                   </button>
-                   
-                
+
                   <ul class="dropdown-menu w-100 mt-3 border-0">
                     <li>
                       <a class="dropdown-item fw-bold" href="#"
@@ -231,21 +230,21 @@
                       >
                     </li>
                   </ul>
-                    <div
-                  id="dropdownInputError"
-                  class="error-message fw-bold text-danger mt-2"
-                ></div>
-                 
+                  <small
+                    id="dropdownInputError"
+                    class="error-message fw-bold text-danger mt-2"
+                  ></small>
                 </div>
               </div>
               <div class="col-md-6 mb-4 mt-4">
                 <button
-                  class="btn btn-danger bg-red w-100 py-3 btn-margin-mobile"
+                  class="btn btn-danger bg-red w-100 py-3"
                   id="buttonBelow"
                   type="submit"
                 >
                   ИСПРАТИ
                 </button>
+                <div id="successMessage" class="fw-bold mt-2"></div>
               </div>
             </div>
           </form>
@@ -253,6 +252,7 @@
       </div>
     </div>
 
+    <!-- Footer -->
     <div class="container-fluid footer">
       <div class="row justify-content-center text-bg-dark py-3">
         <div class="col-md-6 text-center">
@@ -262,105 +262,127 @@
         </div>
       </div>
     </div>
-    <!-- toggle margin top button -->
-    <script>
-      function handleClick() {
-        const buttonBelow = document.getElementById("buttonBelow");
 
-        if (window.innerWidth <= 425) {
-          if (
-            buttonBelow.style.marginTop === "180px" &&
-            buttonBelow.style.marginBottom === ""
-          ) {
-            buttonBelow.style.marginTop = "";
-            buttonBelow.style.marginBottom = "";
-          } else {
-            buttonBelow.style.marginTop = "180px";
-            buttonBelow.style.marginBottom = "";
-          }
-        }
-        
-        
-}
+    <script src="script.js">
+      //   //  <!-- toggle margin top button -->
+      // function handleClick() {
+      //   const buttonBelow = document.getElementById("buttonBelow");
 
-      const button1 = document.getElementById("myButton");
-      button1.addEventListener("click", handleClick);
+      //   if (window.innerWidth <= 425) {
+      //     if (
+      //       buttonBelow.style.marginTop === "180px" &&
+      //       buttonBelow.style.marginBottom === ""
+      //     ) {
+      //       buttonBelow.style.marginTop = "";
+      //       buttonBelow.style.marginBottom = "";
+      //     } else {
+      //       buttonBelow.style.marginTop = "180px";
+      //       buttonBelow.style.marginBottom = "";
+      //     }
+      //   }
+      // }
 
-      // Dropdown menu selecting items
-      const dropdownItems = document.querySelectorAll(".dropdown-item");
+      // const button1 = document.getElementById("dropdownInput");
+      // button1.addEventListener("click", handleClick);
 
-      dropdownItems.forEach((item) => {
-        item.addEventListener("click", (event) => {
-          event.preventDefault();
-          buttonBelow.style.marginTop = "";
-          const selectedText = item.textContent.trim();
-          const dropdownButton = document.querySelector("#myButton");
-          dropdownButton.innerHTML = `${selectedText} <i class="bi bi-chevron-down"></i>`;
-        });
-      });
+      // // Dropdown menu selecting items
+      // const dropdownItems = document.querySelectorAll(".dropdown-item");
 
-      // ------Form Validation------
+      // dropdownItems.forEach((item) => {
+      //   item.addEventListener("click", (event) => {
+      //     event.preventDefault();
+      //     buttonBelow.style.marginTop = "";
+      //     const selectedText = item.textContent.trim();
+      //     const dropdownButton = document.querySelector("#dropdownInput");
+      //     dropdownButton.innerHTML = `${selectedText} <i class="bi bi-chevron-down"></i>`;
+      //   });
+      // });
 
-      document
-        .getElementById("myForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
+      // // ------Form Validation------
 
-          var nameInput = document.getElementById("nameInput");
-          var nameInputError = document.getElementById("nameInputError");
-          if (nameInput.value.trim() === "") {
-            nameInputError.textContent = "Name field is required.";
-            nameInput.classList.add("is-invalid");
-          } else {
-            nameInputError.textContent = "";
-            nameInput.classList.remove("is-invalid");
-            nameInput.classList.add("is-valid");
-          }
-          // company name
-          var companyNameInput = document.getElementById("companyName");
-          var companyNameInputError = document.getElementById(
-            "companyNameInputError"
-          );
-          if (companyName.value.trim() === "") {
-            companyNameInputError.textContent = "Age field is required.";
-            companyName.classList.add("is-invalid");
-          } else {
-            companyNameInputError.textContent = "";
-            companyName.classList.remove("is-invalid");
-            companyName.classList.add("is-valid");
-          }
-          // Validate email input
-          var emailInput = document.getElementById("emailInput");
-          var emailInputError = document.getElementById("emailInputError");
+      // document
+      //   .getElementById("myForm")
+      //   .addEventListener("submit", function (event) {
+      //     event.preventDefault();
 
-          if (emailInput.value.trim() === "") {
-            emailInputError.textContent = "Email field is required.";
-            emailInput.classList.add("is-invalid");
-          } else {
-            emailInputError.textContent = "";
-            emailInput.classList.remove("is-invalid");
-            emailInput.classList.add("is-valid");
-          }
+      //     var nameInput = document.getElementById("nameInput");
+      //     var nameInputError = document.getElementById("nameInputError");
+      //     if (nameInput.value.trim() === "") {
+      //       nameInputError.textContent =
+      //         "Ве молиме внесете го вашето име и презиме";
+      //       nameInput.classList.add("is-invalid");
+      //     } else {
+      //       nameInputError.textContent = "";
+      //       nameInput.classList.remove("is-invalid");
+      //       nameInput.classList.add("is-valid");
+      //     }
+      //     // company name
+      //     var companyNameInput = document.getElementById("companyName");
+      //     var companyNameInputError = document.getElementById(
+      //       "companyNameInputError"
+      //     );
+      //     if (companyName.value.trim() === "") {
+      //       companyNameInputError.textContent =
+      //         "Ве молиме внесете го името на вашата компанија";
+      //       companyName.classList.add("is-invalid");
+      //     } else {
+      //       companyNameInputError.textContent = "";
+      //       companyName.classList.remove("is-invalid");
+      //       companyName.classList.add("is-valid");
+      //     }
+      //     // Validate email input
+      //     var emailInput = document.getElementById("emailInput");
+      //     var emailInputError = document.getElementById("emailInputError");
 
-          // Number input validation
-          var numberInput = document.getElementById("numberInput");
-          var numberInputError = document.getElementById("numberInputError");
-          if (numberInput.value.trim() === "") {
-            numberInputError.textContent = "Age field is required";
-            numberInput.classList.add("is-invalid");
-          } else {
-            numberInputError.textContent = "";
-            numberInput.classList.remove("is-invalid");
-            numberInput.classList.add("is-valid");
-          }
+      //     if (emailInput.value.trim() === "") {
+      //       emailInputError.textContent =
+      //         "Ве молиме внесете ја вашата имејл адреса";
+      //       emailInput.classList.add("is-invalid");
+      //     } else {
+      //       emailInputError.textContent = "";
+      //       emailInput.classList.remove("is-invalid");
+      //       emailInput.classList.add("is-valid");
+      //     }
 
+      //     // Number input validation
+      //     var numberInput = document.getElementById("numberInput");
+      //     var numberInputError = document.getElementById("numberInputError");
+      //     if (numberInput.value.trim() === "") {
+      //       numberInputError.textContent =
+      //         "Ве молиме внесете го вашиот контакт телефон";
+      //       numberInput.classList.add("is-invalid");
+      //     } else {
+      //       numberInputError.textContent = "";
+      //       numberInput.classList.remove("is-invalid");
+      //       numberInput.classList.add("is-valid");
+      //     }
 
+      //     // Validate dropdown menu
+      //     var dropdownInput = document.getElementById("dropdownInput");
+      //     var dropdownInputError =
+      //       document.getElementById("dropdownInputError");
 
-        
- 
-});
+      //     if (dropdownInput.innerText.trim() === "Изберете тип на студент") {
+      //       dropdownInputError.textContent =
+      //         "Ве молиме изберете тип на студент";
+      //       dropdownInput.classList.add("is-invalid");
+      //     } else {
+      //       dropdownInputError.textContent = "";
+      //       dropdownInput.classList.remove("is-invalid");
+      //       dropdownInput.classList.add("is-valid");
+      //     }
 
+      //     var isValid = !document.getElementsByClassName("is-invalid").length;
+      //     var successMessage = document.getElementById("successMessage");
 
+      //     if (isValid) {
+      //       successMessage.textContent = "Формата е успешно испратена!";
+      //       successMessage.classList.add("text-success");
+      //     } else {
+      //       successMessage.textContent = "";
+      //       successMessage.classList.remove("text-success");
+      //     }
+      //   });
     </script>
 
     <!-- POPPER JS -->
