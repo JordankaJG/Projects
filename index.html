@@ -40,8 +40,66 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
+    <nav class="navbar fixed-top">
+      <div class="container-fluid">
+        <p class="navbar_title mx-auto my-auto">Street ARTists</p>
+      </div>
+    </nav>
+
+    <div class="main container-fluid">
+      <div class="row justify-content-center flex-column">
+        <div class="col">
+          <div class="logo-img mx-auto">
+            <img src="./assets/Logo.png" alt="Logo" />
+          </div>
+        </div>
+        <div class="col">
+        
+
+    <div id="join_container" class="position-relative mx-auto">
+        <div class="joined_divs" class="position-relativ">
+          <div id="join_artist" class="position-absolute">
+            <div id="artist_container">
+              <h4>Join as Artist</h4>
+
+              <!-- dropdown -->
+  <div  id="dropdown_menu_container"class=" position-absolute  ">
+                <button id="dropdown_btn"
+                  class=" btn dropdown-toggle d-flex justify-content-between align-items-center"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                
+     <p class="m-0  button_text">Choose </p>
+     <img src="./assets/Vector 4.png" alt="" class="arrow-img ">
+       
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end " aria-labelledby="dropdownMenuButton1">
+               
+                </ul>
+              </div>
+  
+            </div>
+          </div>
+          <div id="join_visitor" class="position-absolute">
+            <div id="visitor_container">
+              <h4>Join as Visitor</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        </div>
+      </div>
+    </div>
+
     <script src="./js/script.js"></script>
+    <script src="/db/data.js"></script>
     <!-- POPPER JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
