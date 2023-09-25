@@ -42,61 +42,93 @@
   </head>
 
   <body>
-    <nav class="navbar fixed-top">
-      <div class="container-fluid">
-        <p class="navbar_title mx-auto my-auto">Street ARTists</p>
-      </div>
-    </nav>
-
-    <div class="main container-fluid">
-      <div class="row justify-content-center flex-column">
-        <div class="col">
-          <div class="logo-img mx-auto">
-            <img src="./assets/Logo.png" alt="Logo" />
-          </div>
+    <!-- Section Landing Page -->
+    <section id="home">
+      <nav class="navbar fixed-top">
+        <div class="container-fluid">
+          <p class="navbar_title mx-auto my-auto">Street ARTists</p>
         </div>
-        <div class="col">
-        
+      </nav>
 
-    <div id="join_container" class="position-relative mx-auto">
-        <div class="joined_divs" class="position-relativ">
-          <div id="join_artist" class="position-absolute">
-            <div id="artist_container">
-              <h4>Join as Artist</h4>
+      <div class="main container-fluid">
+        <div class="row justify-content-center flex-column">
+          <div class="col">
+            <div class="logo-img mx-auto">
+              <img src="./assets/Logo.png" alt="Logo" />
+            </div>
+          </div>
+          <div class="col">
+            <!--Join as Containter  -->
 
-              <!-- dropdown -->
-  <div  id="dropdown_menu_container"class=" position-absolute  ">
-                <button id="dropdown_btn"
-                  class=" btn dropdown-toggle d-flex justify-content-between align-items-center"
-                  type="button"
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                
-     <p class="m-0  button_text">Choose </p>
-     <img src="./assets/Vector 4.png" alt="" class="arrow-img ">
-       
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end " aria-labelledby="dropdownMenuButton1">
-               
-                </ul>
+            <div id="join_container" class="position-relative mx-auto">
+              <div class="joined_divs" class="position-relativ">
+                <div id="join_artist" class="position-absolute">
+                  <div id="artist_container">
+                    <h4 id="join_artist_name">Join as Artist</h4>
+
+                    <!-- dropdown -->
+                    <div id="dropdown_menu_container" class="position-absolute">
+                      <button
+                        id="dropdown_btn"
+                        class="btn dropdown-toggle d-flex justify-content-between align-items-center"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <p class="m-0 " id="button_text">Choose</p>
+                        <img
+                          src="./assets/Vector 4.png"
+                          alt=""
+                          class="arrow-img"
+                        />
+                      </button>
+                      <ul
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="dropdownMenuButton1"
+                      ></ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="join_visitor" class="position-absolute">
+                  <div id="visitor_container">
+                    <h4>Join as Visitor</h4>
+                  </div>
+                </div>
               </div>
-  
-            </div>
-          </div>
-          <div id="join_visitor" class="position-absolute">
-            <div id="visitor_container">
-              <h4>Join as Visitor</h4>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- Section: Visitor_Home_Page -->
+    <section id="visitor_home_page">
+         <nav class="navbar  p-0">
+        <div class="container-fluid pe-4 p-0 justify-content-between">
+          <div id="logo_name" class="d-flex align-items-center ">
+            <a href=""><img src="./assets/Logo.png" alt="" id="logo_visitor"></a>
 
-
+            <p class="navbar_title mb-4">Street ARTists</p>
+          </div>
+          <div id="auction-icon ">
+            <img src="./assets/Vector.png" alt="" id="auction_icon" class="mb-4">
+          </div>
         </div>
+      </nav>
+      <!-- Bricks -->
+      <div class="container_bricks">
+ 
+<div class="row-brick row-1"></div>
+<div class="row-brick row-2"></div>
+<div class="row-brick row-3"></div>
+<div class="row-brick row-4"></div>
+<div class="row-brick row-5"></div>
+<div class="row-brick row-6"></div>
+<div class="row-brick row-7"></div>
+<div class="row-brick row-8"></div>
+      
       </div>
-    </div>
+    </section>
 
     <script src="./js/script.js"></script>
     <script src="/db/data.js"></script>

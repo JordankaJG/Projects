@@ -115,10 +115,7 @@ img {
   font-size: 14px;
   font-weight: 300 !important;
   line-height: 15.23px;
-
 }
-    
-
 
 .arrow-img {
   width: 14px;
@@ -137,4 +134,33 @@ img {
 .dropdown-item:hover {
   background-color: rgba(161, 106, 94, 1);
   color: rgba(252, 235, 213, 1);
+}
+/* Visitor Home Page */
+#logo_visitor {
+  width: 104px !important;
+  height: 104px !important;
+  margin-top: 0;
+}
+#auction_icon {
+  width: 36px;
+  height: 36px;
+}
+
+.row-brick {
+  height: 15.69px !important;
+
+  background-image: url("/assets/Vector-brick.png") !important;
+  background-size: 37.94px 15.69px;
+background-repeat: repeat-x;
+}
+.container_bricks {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 154px;
+}
+.row-brick:nth-child(odd) {
+  margin-left: 10px;
+}
+.row-brick:nth-child(even) {
+  margin-right: 10px;
 }
