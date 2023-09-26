@@ -1,6 +1,6 @@
 // Landing page script
 
-const dropdwnBtn = document.querySelector("#dropdown_menu_container");
+
 const joinVisitorContainer = document.querySelector("#join_visitor");
 
 const landingPage = document.querySelector("#home");
