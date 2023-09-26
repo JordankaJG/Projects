@@ -1,7 +1,7 @@
 /* resets */
 * {
   box-sizing: border-box;
-  font-family: "Ubuntu Mono", monospace;
+  /* font-family: "Ubuntu Mono", monospace; */
 }
 
 body {
@@ -136,15 +136,21 @@ img {
   color: rgba(252, 235, 213, 1);
 }
 /* Visitor Home Page */
-#logo_visitor {
+.logo_visitor {
   width: 104px !important;
   height: 104px !important;
-  margin-top: 0;
+  
 }
-#auction_icon {
-  width: 36px;
-  height: 36px;
+.auction-icon {
+margin-bottom: 30px;
+margin-right: 10px;
+
 }
+.navbar{
+  z-index: 3;
+}
+
+
 
 .row-brick {
   height: 15.69px !important;
@@ -163,4 +169,28 @@ background-repeat: repeat-x;
 }
 .row-brick:nth-child(even) {
   margin-right: 10px;
+}
+
+.bricks_header{
+  width: 192px;
+  height: 75px;
+  font-weight: 500;
+  font-size: 30px !important;
+  color:rgba(161, 106, 94, 1);
+  
+}
+.find_one{
+  background-color:rgba(161, 106, 94, 1);
+  width: 113px;
+  height:27px;
+  border: none;
+  border-radius: 2px;
+  font-size: 12px;
+
+  color: rgba(252, 235, 213, 1);
+  font-weight: 700;
+}
+.bricks-textButton-container {
+  width: 100%;
+top:25%;
 }
