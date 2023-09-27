@@ -1,0 +1,140 @@
+/* resets */
+* {
+  box-sizing: border-box;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+body {
+  margin: 0;
+  background-color: rgba(252, 235, 213, 1);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+/* Navbar */
+
+.navbar {
+  background-color: rgba(245, 227, 203, 1);
+  height: 4.3125rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25) !important;
+}
+
+.navbar_title {
+  color: rgba(161, 106, 94, 1);
+  font-family: "Reenie Beanie", Ubuntu Mono;
+  font-weight: 500;
+  font-size: 30px;
+}
+.logo-img {
+  width: 145.09px;
+  height: 145.14px;
+  margin-top: 120px;
+  margin-bottom: calc(320px - 265px);
+}
+
+#join_container {
+  height: 392.5px;
+  width: 260px;
+}
+
+#join_artist {
+  width: 260px;
+  height: 276.5px;
+  border-top: 100px solid rgba(237, 213, 187, 1);
+  border-bottom: solid 176.5px transparent;
+  border-right: solid 260px rgba(237, 213, 187, 1);
+}
+
+#join_visitor {
+  border-bottom: 100px solid rgba(161, 106, 94, 1);
+  border-top: solid 176.5px transparent;
+  border-left: solid 260px rgba(161, 106, 94, 1);
+  top: 100px;
+}
+
+#join_artist:hover {
+  transform: scale(1.05);
+  transition: 0.1s;
+  z-index: 1;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+}
+#join_visitor:hover {
+  transform: scale(1.05);
+  transition: 0.1s;
+  z-index: 2;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+#artist_container {
+  width: 225.52px;
+  height: 86.42px;
+  position: absolute;
+  left: 30px;
+  bottom: -30px;
+}
+#artist_container h4,
+#visitor_container h4 {
+  font-family: "Reenie Beanie", Ubuntu Mono;
+  font-size: 45px;
+  color: rgba(161, 106, 94, 1);
+  font-weight: 400 !important;
+}
+#visitor_container {
+  width: 225.52px;
+  height: 86.42px;
+  position: absolute;
+  right: 5px;
+}
+
+#visitor_container h4 {
+  color: rgba(252, 235, 213, 1);
+}
+/* dropdown */
+#dropdown_menu_container {
+  left: 110px;
+}
+#dropdown_btn {
+  width: 102.22px;
+  height: 28.45px;
+  border: 1px solid rgba(161, 106, 94, 1);
+  color: rgba(161, 106, 94, 1);
+  background-color: transparent;
+  border-radius: 3px;
+}
+.button_text {
+  font-size: 14px;
+  font-weight: 300 !important;
+  line-height: 15.23px;
+
+}
+    
+
+
+.arrow-img {
+  width: 14px;
+  height: 7px;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.dropdown-menu {
+  background-color: rgba(252, 235, 213, 1);
+  border-color: rgba(161, 106, 94, 1);
+}
+.dropdown-item {
+  color: rgba(161, 106, 94, 1);
+}
+.dropdown-item:hover {
+  background-color: rgba(161, 106, 94, 1);
+  color: rgba(252, 235, 213, 1);
+}
