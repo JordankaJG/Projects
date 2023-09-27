@@ -139,29 +139,25 @@ img {
 .logo_visitor {
   width: 104px !important;
   height: 104px !important;
-  
 }
 .auction-icon {
-margin-bottom: 30px;
-margin-right: 10px;
-
+  margin-bottom: 30px;
+  margin-right: 10px;
 }
-.navbar{
+.navbar {
   z-index: 3;
 }
 
-
-
 .row-brick {
   height: 15.69px !important;
-
-  background-image: url("/assets/Vector-brick.png") !important;
+  margin-bottom: 1px;
+ background-image: url("/assets/Vector-brick.png") !important;
   background-size: 37.94px 15.69px;
-background-repeat: repeat-x;
+  background-repeat: repeat-x;
 }
 .container_bricks {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: px;
   height: 154px;
 }
 .row-brick:nth-child(odd) {
@@ -171,18 +167,17 @@ background-repeat: repeat-x;
   margin-right: 10px;
 }
 
-.bricks_header{
+.bricks_header {
   width: 192px;
   height: 75px;
   font-weight: 500;
   font-size: 30px !important;
-  color:rgba(161, 106, 94, 1);
-  
+  color: rgba(161, 106, 94, 1);
 }
-.find_one{
-  background-color:rgba(161, 106, 94, 1);
+.find_one {
+  background-color: rgba(161, 106, 94, 1);
   width: 113px;
-  height:27px;
+  height: 27px;
   border: none;
   border-radius: 2px;
   font-size: 12px;
@@ -192,5 +187,56 @@ background-repeat: repeat-x;
 }
 .bricks-textButton-container {
   width: 100%;
-top:25%;
+  top: 25%;
+}
+/* Slider */
+
+.slider {
+  position: relative;
+  height: 429px;
+  background-color: rgba(237, 213, 187, 1);
+}
+.slider_row_1 {
+  animation: slideshow 60s linear infinite;
+  width: calc(429px * 19);
+
+
+}
+.slider_row_2{
+    animation: slideshow2 60s linear infinite;
+  width: calc(429px * 19);
+}
+.slider_row_1:hover{
+  animation-play-state:paused;
+}
+.slider_row_2:hover{
+  animation-play-state:paused;
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-429px * 10));
+  }
+}
+@keyframes slideshow2 {
+  0% {
+    transform: translateX(calc(-429px * 10)) ;
+  }
+  100% {
+    transform:translateX(0) ;
+  }
+}
+.slider_img {
+  width: 218px;
+  height: 155.5px;
+  margin: 15px 15px;
+  background: rgba(237, 213, 187, 1);
+  box-shadow: 10px 10px 5px #3331313e;
+}
+.slider_img:hover {
+  scale: 1.1;
+  transition: 0.5s;
 }
