@@ -1,4 +1,4 @@
-// Landing page script
+// Landing page
 
 async function fetchData() {
   try {
@@ -12,6 +12,7 @@ async function fetchData() {
 fetchData();
 let dropdwnBtn = document.querySelector("#dropdown_menu_container");
 const dataStored = JSON.parse(localStorage.getItem("artistData"));
+
 const joinVisitorContainer = document.querySelector("#join_visitor");
 const landingPage = document.querySelector("#home");
 const visitorPage = document.querySelector("#visitor_home_page");
@@ -60,18 +61,7 @@ function handleRoute(event) {
       : (section.style.display = "block");
   });
 
-  // if (hash === "") {
-  //   landingPage.style.display = "block";
-  //   visitorPage.style.display = "none";
-  // } else if (hash.includes("artists")) {
-  //   landingPage.style.display = "none";
-  // } else if (location.hash === "#visitor") {
-  //   landingPage.style.display = "none";
-  //   visitorPage.style.display = "block";
-  // } else if ( location.hash === "#visitor/listing") {
-  //   landingPage.style.display = "none";
-  //   visitorPage.style.display = "none";
-  // }
+
 }
 function switchToVisitorPage() {
   location.hash = "visitor";
@@ -79,6 +69,27 @@ function switchToVisitorPage() {
 
 function transferToVisitorLisitngPage() {
   location.hash = "visitor/listing";
+
+
+
+function renderData() {
+  let dropDownUl = document.querySelector(".dropdown-menu");
+  console.log(dataStored);
+  dropDownUl.innerHTML = '';
+if(dataStored){
+dataStored.forEach((item) => {
+  let dropdownLi = document.createElement("li");
+  let dropdownItem = document.createElement("a");
+  dropdownItem.classList.add("dropdown-item");
+  dropdownItem.innerText += `${item.name}`;
+  dropdownLi.append(dropdownItem);
+
+  dropDownUl.append(dropdownLi);
+});
+}else{
+alert("No data found!")
+}
+
 }
 function switchToAuctionPage(){
   location.hash = "auctioning";
