@@ -1,7 +1,13 @@
-// Sider
+const findOneButton = document.querySelector(".find_one");
+let slideImg = document.querySelectorAll(".slider_div");
+const auctionIcon = document.querySelector(".auction-icon");
+
+
+// Sider Images
 
 const sliderRow1 = document.querySelector(".slider_row_1");
 const sliderRow2 = document.querySelector(".slider_row_2");
+function createImgDiv() {}
 
 function renderSliderImages1() {
   console.log(items);
@@ -16,6 +22,9 @@ function renderSliderImages1() {
       imgDiv.appendChild(image);
 
       sliderRow1.appendChild(imgDiv);
+      imgDiv.addEventListener("click", function () {
+        location.hash = "visitor/listing";
+      });
     });
   }
 }
@@ -34,6 +43,9 @@ function renderSliderImages2() {
       imgDiv.appendChild(image);
 
       sliderRow2.appendChild(imgDiv);
+      imgDiv.addEventListener("click", function () {
+        location.hash = "visitor/listing";
+      });
     });
   }
 }
@@ -48,15 +60,12 @@ const leftArrow = document.querySelector(".button-left");
 const rightArrow = document.querySelector(".button-right");
 let itemIndex = 0;
 
-rightArrow.addEventListener("click",function(){
-
-itemIndex = (itemIndex < 2) ? itemIndex +1 : 2;
-  slidesContainer.style.transform = "translate(" +(itemIndex)* -33.3 +"%)";
-})
-
-leftArrow.addEventListener("click", function () {
-  itemIndex = itemIndex > 0 ? itemIndex - 1 : 0;
+rightArrow.addEventListener("click", function () {
+  itemIndex = itemIndex < 2 ? itemIndex + 1 : 0;
   slidesContainer.style.transform = "translate(" + itemIndex * -33.3 + "%)";
 });
 
-
+leftArrow.addEventListener("click", function () {
+  itemIndex = itemIndex > 0 ? itemIndex - 1 : 2;
+  slidesContainer.style.transform = "translate(" + itemIndex * -33.3 + "%)";
+});

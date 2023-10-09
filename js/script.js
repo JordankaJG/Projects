@@ -15,6 +15,7 @@ const dataStored = JSON.parse(localStorage.getItem("artistData"));
 const joinVisitorContainer = document.querySelector("#join_visitor");
 const landingPage = document.querySelector("#home");
 const visitorPage = document.querySelector("#visitor_home_page");
+let sections = document.querySelectorAll("section");
 
 // render artist names in the dropdown
 function renderData() {
@@ -51,27 +52,42 @@ function renderData() {
 
 function handleRoute(event) {
   event.preventDefault();
-
   let hash = location.hash;
+  if (!hash) location.hash = "home";
+  sections.forEach((section) => {
+    `#${section.id}` !== hash
+      ? (section.style.display = "none")
+      : (section.style.display = "block");
+  });
 
-  console.log(hash);
-  console.log(hash);
-  if (hash === "") {
-    landingPage.style.display = "block";
-    visitorPage.style.display = "none";
-  } else if (hash.includes("artists")) {
-    landingPage.style.display = "none";
-  } else if (hash.includes("visitor")) {
-    landingPage.style.display = "none";
-    visitorPage.style.display = "block";
-  }
+  // if (hash === "") {
+  //   landingPage.style.display = "block";
+  //   visitorPage.style.display = "none";
+  // } else if (hash.includes("artists")) {
+  //   landingPage.style.display = "none";
+  // } else if (location.hash === "#visitor") {
+  //   landingPage.style.display = "none";
+  //   visitorPage.style.display = "block";
+  // } else if ( location.hash === "#visitor/listing") {
+  //   landingPage.style.display = "none";
+  //   visitorPage.style.display = "none";
+  // }
 }
 function switchToVisitorPage() {
   location.hash = "visitor";
 }
 
+function transferToVisitorLisitngPage() {
+  location.hash = "visitor/listing";
+}
+function switchToAuctionPage(){
+  location.hash = "auctioning";
+} 
 
-dropdwnBtn.addEventListener("click", renderData);
-joinVisitorContainer.addEventListener("click", switchToVisitorPage);
+
 window.addEventListener("load", handleRoute);
 window.addEventListener("hashchange", handleRoute);
+dropdwnBtn.addEventListener("click", renderData);
+joinVisitorContainer.addEventListener("click", switchToVisitorPage);
+findOneButton.addEventListener("click", transferToVisitorLisitngPage);
+auctionIcon.addEventListener("click",switchToAuctionPage)
