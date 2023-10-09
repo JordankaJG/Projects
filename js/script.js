@@ -54,6 +54,7 @@ function renderData() {
 function handleRoute(event) {
   event.preventDefault();
   let hash = location.hash;
+  
   if (!hash) location.hash = "home";
   sections.forEach((section) => {
     `#${section.id}` !== hash
@@ -68,29 +69,11 @@ function switchToVisitorPage() {
 }
 
 function transferToVisitorLisitngPage() {
-  location.hash = "visitor/listing";
+  location.hash = "visitor/listing"};
 
 
 
-function renderData() {
-  let dropDownUl = document.querySelector(".dropdown-menu");
-  console.log(dataStored);
-  dropDownUl.innerHTML = '';
-if(dataStored){
-dataStored.forEach((item) => {
-  let dropdownLi = document.createElement("li");
-  let dropdownItem = document.createElement("a");
-  dropdownItem.classList.add("dropdown-item");
-  dropdownItem.innerText += `${item.name}`;
-  dropdownLi.append(dropdownItem);
 
-  dropDownUl.append(dropdownLi);
-});
-}else{
-alert("No data found!")
-}
-
-}
 function switchToAuctionPage(){
   location.hash = "auctioning";
 } 
@@ -101,4 +84,4 @@ window.addEventListener("hashchange", handleRoute);
 dropdwnBtn.addEventListener("click", renderData);
 joinVisitorContainer.addEventListener("click", switchToVisitorPage);
 findOneButton.addEventListener("click", transferToVisitorLisitngPage);
-auctionIcon.addEventListener("click",switchToAuctionPage)
+auctionIcon.addEventListener("click",switchToAuctionPage);
