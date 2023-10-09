@@ -1,12 +1,14 @@
 /* resets */
 * {
   box-sizing: border-box;
-  font-family: "Ubuntu Mono", monospace;
+ 
 }
 
 body {
   margin: 0;
   background-color: rgba(252, 235, 213, 1);
+
+  overflow: hidden;
 }
 h1,
 h2,
@@ -115,10 +117,7 @@ img {
   font-size: 14px;
   font-weight: 300 !important;
   line-height: 15.23px;
-
 }
-    
-
 
 .arrow-img {
   width: 14px;
@@ -137,4 +136,185 @@ img {
 .dropdown-item:hover {
   background-color: rgba(161, 106, 94, 1);
   color: rgba(252, 235, 213, 1);
+}
+/* Visitor Home Page */
+.logo_visitor {
+  width: 104px !important;
+  height: 104px !important;
+}
+.auction-icon {
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+.navbar {
+  z-index: 3;
+}
+
+.row-brick {
+  height: 15.69px !important;
+  margin-bottom: 1px;
+  background-image: url("/assets/Vector-brick.png") !important;
+  background-size: 37.94px 15.69px;
+  background-repeat: repeat-x;
+}
+.container_bricks {
+  padding-top: 10px;
+  padding-bottom: px;
+  height: 154px;
+}
+.row-brick:nth-child(odd) {
+  margin-left: 10px;
+}
+.row-brick:nth-child(even) {
+  margin-right: 10px;
+}
+
+.bricks_header {
+  width: 192px;
+  height: 75px;
+  font-weight: 500;
+  font-size: 30px !important;
+  color: rgba(161, 106, 94, 1);
+}
+.find_one {
+  background-color: rgba(161, 106, 94, 1);
+  width: 113px;
+  height: 27px;
+  border: none;
+  border-radius: 2px;
+  font-size: 12px;
+
+  color: rgba(252, 235, 213, 1);
+  font-weight: 700;
+}
+.bricks-textButton-container {
+  width: 100%;
+  top: 25%;
+}
+/* Slider */
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 429px;
+  background-color: rgba(237, 213, 187, 1);
+}
+.slider_row_1 {
+  animation: slideshow 60s linear infinite;
+  width: calc(429px * 19);
+}
+.slider_row_2 {
+  animation: slideshow2 60s linear infinite;
+  width: calc(429px * 19);
+}
+.slider_row_1:hover {
+  animation-play-state: paused;
+}
+.slider_row_2:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-429px * 10));
+  }
+}
+@keyframes slideshow2 {
+  0% {
+    transform: translateX(calc(-429px * 10));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.slider_img {
+  width: 218px;
+  height: 155.5px;
+  margin: 15px 15px;
+  background: rgba(237, 213, 187, 1);
+  box-shadow: 10px 10px 5px #3331313e;
+}
+.slider_img:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+/* Carousel */
+
+
+.img-circle {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid rgba(161, 106, 94, 1);
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 80%;
+}
+.myCarousel_Container{
+overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+
+}
+.myCarousel{
+  height: 244px;
+}
+.carousel-inner {
+height: 100%;
+width: 300%;
+justify-content: center;
+transition: 0.5s;
+
+
+}
+.rectangle {
+  width: 106px;
+  height: 111px;
+  background-color: rgba(224, 150, 134, 1);
+  color: rgb(255, 255, 255);
+  line-height: 12.44px;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 9px;
+  font-weight: 400;
+}
+.content-right-site {
+  color: rgba(161, 106, 94, 1);
+}
+.content-right-site p {
+  font-size: 9px;
+  font-weight: 400;
+  width: 106px;
+}
+
+.button-left {
+  left: 0;
+  top:40%;
+  
+}
+.button-right {
+ right: 0;
+top: 40%;
+ 
+}
+.button-left,
+.button-right {
+  border: none;
+  background-color: transparent;
+}
+.slide-arrow:hover,
+.slide-arrow:focus{
+  opacity: 0.5;
+}
+.carousel_item{
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
 }

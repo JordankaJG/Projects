@@ -42,64 +42,227 @@
   </head>
 
   <body>
-    <nav class="navbar fixed-top">
-      <div class="container-fluid">
-        <p class="navbar_title mx-auto my-auto">Street ARTists</p>
-      </div>
-    </nav>
-
-    <div class="main container-fluid">
-      <div class="row justify-content-center flex-column">
-        <div class="col">
-          <div class="logo-img mx-auto">
-            <img src="./assets/Logo.png" alt="Logo" />
-          </div>
+    <!-- Section Landing Page -->
+    <section id="home">
+      <nav class="navbar fixed-top">
+        <div class="container-fluid">
+          <p class="navbar_title mx-auto my-auto">Street ARTists</p>
         </div>
-        <div class="col">
-        
+      </nav>
 
-    <div id="join_container" class="position-relative mx-auto">
-        <div class="joined_divs" class="position-relativ">
-          <div id="join_artist" class="position-absolute">
-            <div id="artist_container">
-              <h4>Join as Artist</h4>
+      <div class="main container-fluid">
+        <div class="row justify-content-center flex-column">
+          <div class="col">
+            <div class="logo-img mx-auto">
+              <img src="./assets/Logo.png" alt="Logo" href = "" />
+            </div>
+          </div>
+          <div class="col">
+            <!--Join as Containter  -->
 
-              <!-- dropdown -->
-  <div  id="dropdown_menu_container"class=" position-absolute  ">
-                <button id="dropdown_btn"
-                  class=" btn dropdown-toggle d-flex justify-content-between align-items-center"
-                  type="button"
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                
-     <p class="m-0  button_text">Choose </p>
-     <img src="./assets/Vector 4.png" alt="" class="arrow-img ">
-       
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end " aria-labelledby="dropdownMenuButton1">
-               
-                </ul>
+            <div id="join_container" class="position-relative mx-auto">
+              <div class="joined_divs" class="position-relativ">
+                <div id="join_artist" class="position-absolute">
+                  <div id="artist_container">
+                    <h4 id="join_artist_name">Join as Artist</h4>
+
+                    <!-- dropdown -->
+                    <div id="dropdown_menu_container" class="position-absolute">
+                      <button
+                        id="dropdown_btn"
+                        class="btn dropdown-toggle d-flex justify-content-between align-items-center"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <p class="m-0" id="button_text">Choose</p>
+                        <img
+                          src="./assets/Vector 4.png"
+                          alt=""
+                          class="arrow-img"
+                        />
+                      </button>
+                      <ul
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="dropdownMenuButton1"
+                      ></ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="join_visitor" class="position-absolute">
+                  <div id="visitor_container">
+                    <h4>Join as Visitor</h4>
+                  </div>
+                </div>
               </div>
-  
-            </div>
-          </div>
-          <div id="join_visitor" class="position-absolute">
-            <div id="visitor_container">
-              <h4>Join as Visitor</h4>
             </div>
           </div>
         </div>
       </div>
-
-
+    </section>
+    <!-- Section: Visitor_Home_Page -->
+    <section id="visitor">
+      <nav class="navbar p-0 d-flex align-items-center">
+        <div class="logo_title d-flex align-items-center">
+          <a href=""
+            ><img src="./assets/Logo.png" alt="" class="logo_visitor"
+          /></a>
+          <p class="navbar_title mb-4">Street ARTists</p>
+        </div>
+        <div class="auction-icon">
+          <img src="./assets/Vector.png" alt="" />
+        </div>
+      </nav>
+      <!-- Bricks -->
+      <div class="container_bricks position-relative w-100">
+        <div class="row-brick row-1"></div>
+        <div class="row-brick row-2"></div>
+        <div class="row-brick row-3"></div>
+        <div class="row-brick row-4"></div>
+        <div class="row-brick row-5"></div>
+        <div class="row-brick row-6"></div>
+        <div class="row-brick row-7"></div>
+        <div class="row-brick row-8"></div>
+        <div
+          class="d-flex justify-content-between position-absolute bricks-textButton-container align-items-center"
+        >
+          <h1 class="bricks_header ms-3">Looking for masterpiece?</h1>
+          <button class="find_one me-3">Find one now !</button>
         </div>
       </div>
-    </div>
+      <!-- Sliders -->
+      <div class="slider p-4">
+        <div class="slider_row_1 d-flex"></div>
+        <div class="slider_row_2 d-flex"></div>
+      </div>
+      <!-- Carousel -->
 
-    <script src="./js/script.js"></script>
+      <div class="myCarousel_Container">
+        <div class="myCarousel position-relative">
+          <div class="carousel-inner d-flex position-relative">
+            <div class="carousel_item first">
+              <div class="contentItem-container">
+                <div
+                  class="contentItem-wrapper d-flex justify-content-center align-items-center"
+                >
+                  <div class="content-left-site me-5">
+                    <div class="content-left-wrapper position-relative">
+                      <img
+                        src="/assets/carousel-image-1.jpg"
+                        alt="Chicago"
+                        class="img-circle position-absolute"
+                      />
+                      <div class="rectangle">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Modi, eligendi?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="middle-separator">
+                    <img src="./assets/Line 1.png" alt="" />
+                  </div>
+                  <div class="content-right-site ms-5">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Consectetur alias incidunt voluptas sed sint temporibus
+                      natus culpa
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel_item">
+              <div class="contentItem-container">
+                <div
+                  class="contentItem-wrapper d-flex justify-content-center align-items-center"
+                >
+                  <div class="content-left-site me-5">
+                    <div class="content-left-wrapper position-relative">
+                      <img
+                        src="/assets/carousel-image-2.jpg"
+                        alt="Chicago"
+                        class="img-circle position-absolute"
+                      />
+                      <div class="rectangle">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Modi, eligendi?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="middle-separator">
+                    <img src="./assets/Line 1.png" alt="" />
+                  </div>
+                  <div class="content-right-site ms-5">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Consectetur alias incidunt voluptas sed sint temporibus
+                      natus culpa
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel_item">
+              <div class="contentItem-container">
+                <div
+                  class="contentItem-wrapper d-flex justify-content-center align-items-center"
+                >
+                  <div class="content-left-site me-5">
+                    <div class="content-left-wrapper position-relative">
+                      <img
+                        src="/assets/carousel-image-3.jpg"
+                        alt="Chicago"
+                        class="img-circle position-absolute"
+                      />
+                      <div class="rectangle">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Modi, eligendi?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="middle-separator">
+                    <img src="./assets/Line 1.png" alt="" />
+                  </div>
+                  <div class="content-right-site ms-5">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Consectetur alias incidunt voluptas sed sint temporibus
+                      natus culpa
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Left and right controls -->
+          <button class="button-left position-absolute slide-arrow">
+            <img
+              src="./assets/carousel-left-icon.png"
+              alt=""
+              class="slide-arrow"
+            />
+          </button>
+          <button class="button-right position-absolute">
+            <img
+              src="/assets/carousel-right-icon.png "
+              alt=""
+              class="slide-arrow"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+
     <script src="/db/data.js"></script>
+    <script src="/js/visitor_home_page.js"></script>
+    <script src="./js/script.js"></script>
     <!-- POPPER JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
