@@ -14,7 +14,7 @@ const items = [
     dateCreated: "2022-08-21T17:11:19.416Z",
     isPublished: false,
     isAuctioning: false,
-    dateSold: "2022-09-06T15:21:41.926Z",
+    dateSold: "2023-10-20T15:21:41.926Z",
     priceSold: 2030,
   },
   {
@@ -30,7 +30,7 @@ const items = [
     dateCreated: "2022-08-11T03:50:30.715Z",
     isPublished: false,
     isAuctioning: false,
-    dateSold: "2022-09-09T08:11:48.231Z",
+    dateSold: "2023-10-18T15:21:41.926Z",
     priceSold: 350,
   },
   {
@@ -46,7 +46,7 @@ const items = [
     dateCreated: "2022-08-16T13:55:02.623Z",
     isPublished: true,
     isAuctioning: false,
-    dateSold: "2022-09-17T00:49:44.272Z",
+    dateSold: "2023-10-21T15:21:41.926Z",
     priceSold: 2810,
   },
   {
