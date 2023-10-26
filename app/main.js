@@ -90,11 +90,7 @@ initVisitorHomePage();
         break;
   }
 
-//   if (hash === "#auction") {
-//     initAuctionPage();
-//   } else {
-//     backBtn.classList.add("d-none");
-//   }
+
  }
 window.addEventListener("hashchange", handleRouting);
 window.addEventListener("load", handleRouting);
